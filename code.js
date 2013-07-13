@@ -17,23 +17,23 @@ $('.clickable').bind('click', function (ev) {
 });
 
 function GetMap() {
-   	var map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), {credentials:"Your Bing Maps Key"});
+   	var map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), {credentials:"AlMwkFkfyU34QvJY6PRMyNDCA0N0t3UXTJfGsqZ92l-ygn3XHal3e61XObbeOcSE"});
 }
 
 
  function GetResults(locations) {
-           var s="Results for " + LL.Latitude + ", " + LL.Longitude + ": ";
-            if(locations != null)
-            {
-              s+=locations[0].Name;
-              // Get the country name
+           
+    if(locations != null)
+    {
+        var country = locations[0].Name;
+        // Get the country name
 
-// open the hyperlink for the country
-            }
-            else
-            {
-               s+="No Result found.";
-            }
+		// open the hyperlink for the country
+    }
+    else
+    {
+        var error = "No Result found.";
+    }
 
-            alert(s);
+    alert(countryw);
 }
