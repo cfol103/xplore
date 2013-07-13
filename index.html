@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style type="text/css">
+
+html{
+    background:url('http://eoimages.gsfc.nasa.gov/images/imagerecords/55000/55167/earth_lights_lrg.jpg') no-repeat center center;
+    min-height:100%;
+    background-size:cover;
+}
+
+.clickable{
+	position:absolute;
+    top:0; right:0;
+    bottom:0; left:0;
+}
+
+span#welcome{
+	  margin-left: 15px;
+	  font: 48px/48px "OpenSansLight",HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;;
+	  	  color: rgba(255, 255, 255, .8);
+	  	  font-size-adjust:0.5;
+}
+
+#video-modal {
+	width: 640px;
+	height: 410px;
+	position: absolute;
+	margin-top: -205px;
+	margin-left: -320px;
+	left: 50%;
+	top: 50%;
+	display: none;
+	background: rgba(0, 0, 0, .5);
+}
+
+span#instructions{
+	position: absolute;
+	top: 90%;
+	left: 70%;
+	font: 20px/20px "OpenSansLight",HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;;
+	  	  color: rgba(255, 255, 255, .8);
+	  	  font-size-adjust:0.5;
+}
+
+
+</style>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsEKzcy6XdmBW_CewmMkwv7Zkvvu6oRDk&sensor=false"></script>
+<script src="xplore.js"> </script>
+</head>
+
+<body>
+	<h1><span id="welcome">Welcome to Xploration!</span></h1>
+	<p><span id="instructions">Click on a country to begin.</span></p>
+	<div class='clickable' onclick="clickArea(event)"></div>
+	<div id="video-modal">
+		<div clas="modal-header">
+			<button class="closebtn">close</button>
+		</div>
+		<div class="modal-body"></div>
+	</div>
+</body>
+</html>
