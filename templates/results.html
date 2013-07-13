@@ -1,0 +1,5 @@
+<!doctype html>
+<title>Video Results</title>
+{% for id in video_ids %}
+	<iframe id="video-{{loop.index}}" type="text/html" width="640" height="390"  src="http://www.youtube.com/embed/{{id}}?autoplay=0&origin=http://example.com" frameborder="0" />
+{% endfor %}
